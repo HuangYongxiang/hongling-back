@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主页面 功能模块上左侧icon样式-->
+    <style name="core_main_page_title_icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">17dp</item>
+    </style>
+    <style name="core_main_page_title_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">13dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/core_text_color_333333</item>
+    </style>
+
+    <!--主页面 功能模块上左侧 textView 样式-->
+    <style name="core_main_text_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:drawablePadding">13dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/core_text_color_333333</item>
+    </style>
+
+    <!--主页面 所选损失项目数量 textView 样式-->
+    <style name="core_main_finish_base_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/core_text_size_12</item>
+    </style>
+
+    <!--主页面 各功能模块下 信息展示左侧 textView 样式-->
+    <style name="core_main_finish_left_txt" parent="core_main_finish_base_txt">
+        <item name="android:textColor">@color/core_text_color_333333</item>
+    </style>
+
+    <!--主页面 各功能模块下 信息展示右侧 textView 样式-->
+    <style name="core_main_finish_right_txt" parent="core_main_finish_base_txt">
+        <item name="android:textColor">@color/core_text_color_999999</item>
+    </style>
+
+    <!--主页面 功能模块上右侧 textView 样式-->
+    <style name="core_main_text_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textSize">@dimen/core_text_size_12</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/core_text_color_999999</item>
+    </style>
+
+</resources>

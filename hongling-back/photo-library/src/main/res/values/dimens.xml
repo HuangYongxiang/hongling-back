@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_margin_5">5dip</dimen>
+    <dimen name="photo_text_size_32">32sp</dimen>
+    <dimen name="photo_margin_15">15dip</dimen>
+</resources>

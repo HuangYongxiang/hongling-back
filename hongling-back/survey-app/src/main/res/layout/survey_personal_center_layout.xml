@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="userInfo"
+            type="com.hl.contract.table.model.UserInfo" />
+        <variable
+            name="personalCenterActivity"
+            type="com.hl.contract.business.personalcenter.view.PersonalCenterActivity" />
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/survey_navy">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/survey_company_logo"
+                android:padding="10dp" />
+            <!--android:background="@drawable/survey_personal_circle_bg"-->
+
+            <LinearLayout style="@style/survey_eval_basic_item_layout_style"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:layout_marginLeft="30dp"
+                    android:text="区域：" />
+
+                <TextView
+                    android:id="@+id/region_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@={userInfo.addr}"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:textColor="@color/survey_menu_text_color"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <View style="@style/survey_value_with_line" />
+
+            <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                <TextView
+                    android:id="@+id/store_tv"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:layout_marginLeft="30dp"
+                    android:text="门店：" />
+
+                <TextView
+                    android:layout_marginRight="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@={userInfo.storeName}"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:textColor="@color/survey_menu_text_color"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <View style="@style/survey_value_with_line" />
+            <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:layout_marginLeft="30dp"
+                    android:text="姓名：" />
+
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@={userInfo.name}"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:textColor="@color/survey_menu_text_color"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <View style="@style/survey_value_with_line" />
+            <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:layout_marginLeft="30dp"
+                    android:text="账号：" />
+
+                <TextView
+                    android:id="@+id/user_id_tv"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@={userInfo.account}"
+                    android:textSize="@dimen/core_text_size_16"
+                    android:textColor="@color/survey_menu_text_color"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <View style="@style/survey_value_with_line" />
+
+
+            <TextView
+                android:id="@+id/current_cuntomer_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="王小明"
+                android:textColor="@color/survey_333333"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/setting_tv"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_setting"
+                android:onClick="@{(view) -> personalCenterActivity.setting() }"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/check_update_tv"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_check_update"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/get_dict_info_tv"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_sync_dict_info"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/exit_current_account_tv"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_exit_current_account"
+                android:onClick="@{(view) -> personalCenterActivity.exitAccount() }"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/current_version_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/current_copyright_tv"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal"
+            android:text="@string/survey_current_version"
+            android:textColor="@color/survey_333333"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/current_copyright_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="版权所有：北京宏瓴科技发展有限公司"
+            android:textColor="@color/survey_333333"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</layout>

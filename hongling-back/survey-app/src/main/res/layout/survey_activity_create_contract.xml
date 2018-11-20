@@ -1,0 +1,1178 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <import type="com.hl.contract.util.SurveyClaimUtil"/>
+        <import type="com.hl.core.lib.adapter.LayoutManagers"/>
+        <variable
+            name="contract"
+            type="com.hl.contract.table.model.Contract"/>
+        <variable
+            name="createContractClick"
+            type="com.hl.contract.business.main.view.CreateContractActivity.CreateContractClick"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_layout"
+            tools:ignore="NotSibling">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/survey_query_layer_img_layout" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/core_white"
+                        android:orientation="vertical">
+
+                        <View style="@style/survey_value_with_bar" />
+
+                        <LinearLayout
+                            android:id="@+id/survey_lin4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+                                    android:text="产品类型" />
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:id="@+id/owner_ocr_img2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:onClick="@{v->createContractClick.ownerOcr()}"
+                                    android:src="@mipmap/survey_btn_photo" />
+                            </LinearLayout>
+
+                            <View style="@style/survey_detail_red_line" />
+                        </LinearLayout>
+
+
+
+                        <View style="@style/survey_value_with_line"
+                            android:id="@+id/survey_line4"/>
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style"
+                            android:id="@+id/survey_lin3">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_products_typ" />
+
+                            <TextView
+                                android:id="@+id/owner_product_type_select_tv"
+                                android:onClick="@{v->createContractClick.setProductType()}"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:text="@={contract.productType}"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose" />
+
+                        </LinearLayout>
+                        <View style="@style/survey_value_with_line"
+                            android:id="@+id/survey_line3"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+                                    android:text="车主信息" />
+
+                                <ImageView
+                                    android:id="@+id/owner_ocr_img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:onClick="@{v->createContractClick.ownerOcr()}"
+                                    android:src="@mipmap/survey_btn_photo" />
+                            </LinearLayout>
+
+                            <View style="@style/survey_detail_red_line" />
+                        </LinearLayout>
+
+
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="车主姓名" />
+
+                            <EditText
+                                android:id="@+id/owner_name_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="@string/survey_write_note"
+                                android:text="@={contract.ownerName}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="车主性别" />
+
+                            <RadioGroup
+                                android:id="@+id/owner_sex_rg"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/owner_sex_male"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:layout_marginRight="15dp"
+                                    android:onClick="@{v->createContractClick.setOwnerSexMale()}"
+                                    android:text="@string/survey_text_male" />
+
+                                <RadioButton
+                                    android:id="@+id/owner_sex_female"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:onClick="@{v->createContractClick.setOwnerSexFemale()}"
+                                    android:text="@string/survey_text_female" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_credentials_typ" />
+
+                            <TextView
+                                android:id="@+id/owner_certificate_type_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.setOwnerCertificateType()}"
+                                android:text="@={contract.ownerCertificateType}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_credentials_no" />
+
+                            <EditText
+                                android:id="@+id/owner_certificate_no_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="只识别身份证号"
+                                android:text="@={contract.ownerCertificateNo}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_eval_basic_item_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_phone" />
+
+                            <EditText
+                                android:id="@+id/owner_telephone_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:inputType="phone"
+                                android:maxLength="11"
+                                android:text="@={contract.ownerTelePhone}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="电子邮箱" />
+
+                            <EditText
+                                android:id="@+id/owner_email_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:text="@={contract.ownerEmail}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+                                    android:text="车辆信息" />
+
+                                <ImageView
+                                    android:id="@+id/vin_no_ocr_img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:onClick="@{v->createContractClick.vinNoOcr()}"
+                                    android:src="@mipmap/survey_btn_photo" />
+                            </LinearLayout>
+
+                            <View style="@style/survey_detail_red_line" />
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_province" />
+
+
+                            <TextView
+                                android:id="@+id/payment_bank_province_tv"
+                                style="@style/survey_eval_basic_required_right"
+                                android:drawableEnd="@mipmap/survey_icon_go"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{()->createContractClick.setBankProvince()}"
+                                android:text="@={contract.proComName}" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/survey_eval_basic_item_line"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_city" />
+
+                            <TextView
+                                android:id="@+id/payment_bank_city_tv"
+                                style="@style/survey_eval_basic_required_right"
+                                android:drawableEnd="@mipmap/survey_icon_go"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/survey_write_note"
+                                android:onClick="@{()->createContractClick.setBankCounty()}"
+                                android:text="@={contract.cityComName}" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            style="@style/survey_eval_basic_item_line"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_county" />
+
+                            <TextView
+                                android:id="@+id/payment_bank_county_tv"
+                                style="@style/survey_eval_basic_required_right"
+                                android:drawableEnd="@mipmap/survey_icon_go"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/survey_write_note"
+                                android:onClick="@{()->createContractClick.setBankCity()}"
+                                android:text="@={contract.countyComName}" />
+
+                        </LinearLayout>
+
+
+                        <View
+                            style="@style/survey_eval_basic_item_line"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="地区" />
+
+                            <EditText
+                                android:id="@+id/region_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:text="@={contract.region}" />
+
+                            <!--<com.chenzg.ifly.EditTextWithIfly-->
+                            <!--android:id="@+id/region_et"-->
+                            <!--style="@style/survey_eval_basic_required_right"-->
+                            <!--android:text="@={contract.region}"-->
+                            <!--/>-->
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/survey_value_with_line"
+                            android:visibility="gone" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_plate_no_inf" />
+
+                            <EditText
+                                android:id="@+id/plate_no_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="@string/survey_hint_text_ocr_xingshi_license"
+                                android:text="@={contract.plateNo}" />
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_vin_no" />
+
+                            <EditText
+                                android:id="@+id/third_vin_no_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="@string/survey_hint_text_ocr_xingshi_license"
+                                android:maxLength="17"
+                                android:text="@={contract.vinNo}" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_engine_no" />
+
+                            <EditText
+                                android:id="@+id/third_engine_no_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="@string/survey_hint_text_ocr_xingshi_license"
+                                android:text="@={contract.engineNo}" />
+                        </LinearLayout>
+
+                        <View
+                            style="@style/survey_value_with_line"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_lisence_type" />
+
+                            <TextView
+                                android:id="@+id/third_plate_type_select_tv"
+                                style="@style/survey_eval_basic_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.setPlateType()}"
+                                android:text="@={contract.plateType}" />
+                        </LinearLayout>
+
+                        <View
+                            style="@style/survey_value_with_line"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="品牌" />
+
+
+                            <TextView
+                                android:id="@+id/brand_name_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:drawableEnd="@mipmap/survey_icon_go"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/survey_write_note"
+                                android:onClick="@{()->createContractClick.setBrand()}"
+                                android:text="@={contract.brandName}" />
+
+
+                            <!--<EditText-->
+                            <!--android:id="@+id/brand_name_et"-->
+                            <!--style="@style/survey_eval_basic_required_right"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@={contract.brandName}" />-->
+                            <!--<ImageView-->
+                            <!--android:id="@+id/brand_search_iv"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:onClick="@{v->createContractClick.searchBrand() }"-->
+                            <!--android:src="@mipmap/core_search" />-->
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="车系" />
+
+                            <TextView
+                                android:id="@+id/family_name_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:drawableEnd="@mipmap/survey_icon_go"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/survey_write_note"
+                                android:onClick="@{()->createContractClick.setFamily()}"
+                                android:text="@={contract.familyName}" />
+
+                            <!--<EditText-->
+                            <!--android:id="@+id/family_name_et"-->
+                            <!--style="@style/survey_eval_basic_required_right"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@={contract.familyName}"/>-->
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="车型" />
+
+                            <TextView
+                                android:id="@+id/model_name_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:drawableEnd="@mipmap/survey_icon_go"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/survey_write_note"
+                                android:onClick="@{()->createContractClick.setVehicle()}"
+                                android:text="@={contract.modelName}" />
+
+                            <!--<EditText-->
+                            <!--android:id="@+id/model_name_et"-->
+                            <!--style="@style/survey_eval_basic_required_right"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="@={contract.modelName}" />-->
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_buying_price" />
+
+                            <EditText
+                                android:id="@+id/vehicle_price_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="0.0"
+                                android:inputType="numberDecimal"
+                                android:text="@{contract.vehiclePrice == null ? ``:String.valueOf(contract.vehiclePrice)}" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="(元)"
+                                android:textColor="@color/survey_menu_text_color"
+                                android:textSize="@dimen/core_text_size_16" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="购车日期" />
+
+                            <TextView
+                                android:id="@+id/buy_car_date_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.driverIssueDateSelected()}"
+                                android:text="@{contract.buyCarDate}" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="车辆用途" />
+
+                            <TextView
+                                android:id="@+id/use_property_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.setUsePropertyType()}"
+                                android:text="@={contract.usePropertyName}" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="电池编号" />
+
+                            <EditText
+                                android:id="@+id/battery_number_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:layout_height="wrap_content"
+                                android:text="@={contract.batteryNumber}" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/survey_line1"
+                            style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:id="@+id/survey_lin1"
+                            style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="电机编号" />
+
+                            <EditText
+                                android:id="@+id/battery_numbers_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:layout_height="wrap_content"
+                                android:text="@={contract.batteryNumber}" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/survey_line2"
+                            style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:id="@+id/survey_lin2"
+                            style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="里程数" />
+
+                            <EditText
+                                android:id="@+id/battery_numberss_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:layout_height="wrap_content"
+                                android:text="@={contract.batteryNumber}" />
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="是否投保商业险" />
+
+                            <RadioGroup
+                                android:id="@+id/is_insure_commercial_rg"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/is_insure_commercial_yes"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:layout_marginRight="15dp"
+                                    android:onClick="@{v->createContractClick.setIsInsureCommercialYes()}"
+                                    android:text="@string/survey_yes" />
+
+                                <RadioButton
+                                    android:id="@+id/is_insure_commercial_no"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:onClick="@{v->createContractClick.setIsInsureCommercialNo()}"
+                                    android:text="@string/survey_no" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="保险公司" />
+
+                            <TextView
+                                android:id="@+id/insurance_company_name_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.setInsuranceCompanyNameType()}"
+                                android:text="@={contract.commercialCompany}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="保单号" />
+
+                            <EditText
+                                android:id="@+id/policy_no_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:layout_height="wrap_content"
+                                android:text="@={contract.policyNo}" />
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+                                    android:text="服务购买人信息" />
+
+                                <ImageView
+                                    android:id="@+id/service_ocr_img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:onClick="@{v->createContractClick.serviceOcr()}"
+                                    android:src="@mipmap/survey_btn_photo" />
+                            </LinearLayout>
+
+                            <View style="@style/survey_detail_red_line" />
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="与车主关系" />
+
+                            <TextView
+                                android:id="@+id/relation_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.setRelationType()}"
+                                android:text="@={contract.relation}" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="姓名" />
+
+                            <EditText
+                                android:id="@+id/service_name_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="@string/survey_write_note"
+                                android:text="@={contract.serviceName}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="性别" />
+
+                            <RadioGroup
+                                android:id="@+id/service_sex_rg"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/service_sex_male"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:layout_marginRight="15dp"
+                                    android:onClick="@{v->createContractClick.setServiceSexMale()}"
+                                    android:text="@string/survey_text_male" />
+
+                                <RadioButton
+                                    android:id="@+id/service_sex_female"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:onClick="@{v->createContractClick.setServiceSexFemale()}"
+                                    android:text="@string/survey_text_female" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_credentials_typ" />
+
+                            <TextView
+                                android:id="@+id/service_certificate_type_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.setServiceCertificateType()}"
+                                android:text="@={contract.serviceCertificateType}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_credentials_no" />
+
+                            <EditText
+                                android:id="@+id/service_certificate_no_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="只识别身份证号"
+                                android:text="@={contract.serviceCertificateNo}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_eval_basic_item_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="@string/survey_text_phone" />
+
+                            <EditText
+                                android:id="@+id/service_telephone_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:inputType="phone"
+                                android:maxLength="11"
+                                android:text="@={contract.serviceTelePhone}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="电子邮箱" />
+
+                            <EditText
+                                android:id="@+id/service_email_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:text="@={contract.serviceEmail}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="地址" />
+
+                            <EditText
+                                android:id="@+id/service_adress_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:text="@={contract.serviceEmail}" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+                                    android:text="服务期限" />
+                            </LinearLayout>
+
+                            <View style="@style/survey_detail_red_line" />
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="合同年限" />
+
+                            <TextView
+                                android:id="@+id/service_validity_date_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.serviceValiditySelected()}"
+                                android:text="@{contract.termOfValidityDate}" />
+
+                            <!---->
+                            <!--<EditText-->
+                            <!--android:id="@+id/term_of_validity_date_et"-->
+                            <!--style="@style/survey_eval_basic_required_right"-->
+                            <!--android:text="@={contract.termOfValidityDate}"-->
+                            <!--android:inputType="numberDecimal"-->
+                            <!--/>-->
+                            <!---->
+                            <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="(年)"-->
+                            <!--android:textSize="@dimen/core_text_size_16"-->
+                            <!--android:textColor="@color/survey_menu_text_color"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--/>-->
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/line_youhuis"
+                            style="@style/survey_value_with_line"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/service_youhuis"
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="活动优惠" />
+
+                            <RadioGroup
+                                android:id="@+id/service_youhui"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/service_you"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:layout_marginRight="15dp"
+                                    android:text="@string/survey_text_you" />
+
+                                <RadioButton
+                                    android:id="@+id/service_meiyou"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:text="@string/survey_text_meiyou" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout style="@style/survey_eval_basic_item_layout_style">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="服务生效日期" />
+
+                            <TextView
+                                android:id="@+id/service_start_date_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.serviceStartDateSelected()}"
+                                android:text="@{contract.serviceStartDate}" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="服务终止时间" />
+
+                            <TextView
+                                android:id="@+id/service_end_date_select_tv"
+                                style="@style/survey_eval_basic_un_required_right"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/survey_icon_go"
+                                android:hint="@string/survey_text_choose"
+                                android:onClick="@{v->createContractClick.serviceEndDateSelected()}"
+                                android:text="@{contract.serviceEndDate}" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            style="@style/survey_value_with_line"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            style="@style/survey_eval_basic_item_layout_style"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/survey_eval_basic_required_left"
+                                android:text="首次登记日起行驶里程" />
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/service_mileage_select_tv"-->
+                            <!--android:onClick="@{v->createContractClick.serviceMileageSelected()}"-->
+                            <!--style="@style/survey_eval_basic_un_required_right"-->
+                            <!--android:drawablePadding="10dp"-->
+                            <!--android:text="@{contract.serviceEndDate}"-->
+                            <!--android:drawableRight="@mipmap/survey_icon_go"-->
+                            <!--android:hint="@string/survey_text_choose" />-->
+                            <EditText
+                                android:id="@+id/mileage_et"
+                                style="@style/survey_eval_basic_required_right"
+                                android:hint="0.0"
+                                android:inputType="numberDecimal"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="(公里)"
+                                android:textColor="@color/survey_menu_text_color"
+                                android:textSize="@dimen/core_text_size_16" />
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:id="@+id/read_contract_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/goto_contract_content"
+                                    style="@style/survey_detail_title"
+                                    android:onClick="@{v->createContractClick.gotoContractContent()}"
+                                    android:text="《电池无忧合同》及《会员权益及义务》" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/core_side_margin_17"
+                            android:paddingRight="@dimen/core_side_margin_17">
+
+
+                            <RadioGroup
+                                android:id="@+id/agree_rg"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:gravity="center_vertical|right"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/agree_yes"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:layout_marginRight="15dp"
+                                    android:onClick="@{v->createContractClick.setAgree()}"
+                                    android:text="我已阅读并同意" />
+
+                                <RadioButton
+                                    android:id="@+id/agree_not"
+                                    style="@style/survey_eval_basic_radiobtn_style"
+                                    android:onClick="@{v->createContractClick.setNotAgree()}"
+                                    android:text="不同意"
+                                    android:visibility="gone" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </ScrollView>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/error_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/core_tip_color"
+            android:drawableLeft="@mipmap/survey_icon_rmd01"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/core_remind_unfilled"
+            android:textColor="@color/survey_white"
+            android:visibility="gone" />
+        <LinearLayout
+
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                style="@style/survey_value_with_bar" />
+
+            <TextView
+                android:id="@+id/agree_button"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:text="创建合同"
+                android:gravity="center"
+                android:background="@drawable/survey_login_btn_default_bg"
+                android:textColor="@color/survey_gray_btn_bg_color"
+                android:onClick="@{(view) -> createContractClick.gotoSave() }"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</layout>

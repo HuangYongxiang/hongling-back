@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingStart="36dp"
+              android:paddingEnd="36dp"
+              android:paddingTop="20dp"
+              android:paddingBottom="20dp"
+              android:background="@drawable/core_loading_black_bg"
+              android:gravity="center"
+              android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/core_load_result"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/core_pb_loading"
+        style="@style/core_circleProgressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/core_tv_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

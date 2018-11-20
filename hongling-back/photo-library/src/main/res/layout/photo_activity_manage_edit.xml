@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/core_white">
+
+        <include
+            android:id="@+id/bottom_layout"
+            layout="@layout/photo_edit_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/bottom_layout">
+
+            <LinearLayout
+                android:id="@+id/photo_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/photo_linearLayout_survey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View style="@style/photo_cut_off_line1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="17dp"
+                            android:text="@string/photo_survey_title"
+                            android:textColor="@color/photo_repair_font_color"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/photo_cut_off_line1" />
+
+                    <com.hl.photo.ui.widget.MyGridView
+                        android:id="@+id/ds_picshow_survey"
+                        android:listSelector="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="80dp"
+                        android:drawSelectorOnTop="true"
+                        android:gravity="center"
+                        android:numColumns="4"
+                        android:scrollingCache="true"
+                        android:verticalSpacing="5dp"
+                        android:horizontalSpacing="5dp"
+                        android:layout_margin="14dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/photo_linearLayout_eval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photo_linearLayout_survey"
+                    android:orientation="vertical">
+
+                    <View style="@style/photo_cut_off_line1" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="17dp"
+                            android:text="@string/photo_eval_title"
+                            android:textColor="@color/photo_repair_font_color"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/photo_cut_off_line2" />
+
+                    <com.hl.photo.ui.widget.MyGridView
+                        android:id="@+id/ds_pic_show_eval"
+                        android:listSelector="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="80dp"
+                        android:drawSelectorOnTop="true"
+                        android:gravity="center"
+                        android:numColumns="4"
+                        android:scrollingCache="true"
+                        android:verticalSpacing="5dp"
+                        android:horizontalSpacing="5dp"
+                        android:layout_margin="14dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/photo_linearLayout_third_eval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photo_linearLayout_eval"
+                    android:orientation="vertical">
+
+                    <View style="@style/photo_cut_off_line1" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="17dp"
+                            android:text="@string/photo_third_eval_title"
+                            android:textColor="@color/photo_repair_font_color"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <View style="@style/photo_cut_off_line2" />
+
+                    <com.hl.photo.ui.widget.MyGridView
+                        android:id="@+id/ds_pic_show_third_eval"
+                        android:listSelector="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="80dp"
+                        android:drawSelectorOnTop="true"
+                        android:gravity="center"
+                        android:numColumns="4"
+                        android:scrollingCache="true"
+                        android:verticalSpacing="5dp"
+                        android:horizontalSpacing="5dp"
+                        android:layout_margin="14dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

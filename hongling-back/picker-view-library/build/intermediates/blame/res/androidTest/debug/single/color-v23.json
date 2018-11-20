@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\color-v23\\abc_tint_switch_track.xml"
+    }
+]

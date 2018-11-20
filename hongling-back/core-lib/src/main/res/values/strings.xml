@@ -1,0 +1,45 @@
+<resources>
+    <string name="core_app_name">core-lib</string>
+    <string name="core_interceptor_return_error">拦截器返回类型错误</string>
+    <string name="core_fragment_added">%1$sFragment已加载</string>
+    <string name="core_fragment_back_stack">弹栈时检测到栈内为空，请先进行压栈操作！</string>
+    <string name="core_fragment_has_no_owner">Fragment未绑定所属Activity，请采用标准方式操作Fragment！</string>
+    <string name="core_plugin_not_init">%1$s绑定的标题栏插件没有初始化</string>
+    <string name="core_layout_failed">initLayout返回参数不合法，请检查</string>
+    <!--dialog-->
+    <string name="core_dialog_tip">提示</string>
+    <string name="core_close">关闭</string>
+    <string name="core_add">添加</string>
+    <string name="core_add_sign">+ 添加</string>
+    <string name="core_dialog_confirm">确定</string>
+    <string name="core_dialog_cancel">取消</string>
+    <string name="core_dialog_delete">删除</string>
+
+
+
+    <string name="core_err404">无法找到指定位置的资源</string>
+    <string name="core_err500">内部服务器错误</string>
+    <string name="core_err502">网关错误</string>
+    <string name="core_errDefault">网络错误</string>
+    <string name="core_errTimeout">网络连接超时</string>
+
+    <string name="core_loading_label">正在加载....</string>
+
+
+    <!-- 提醒类信息 -->
+    <string name="core_remind_unfilled">还有未填写的信息，请您完善红色文字提醒的部分</string>
+    <string name="core_remind_no_data">暂无数据</string>
+
+    <!-- 表单类信息 -->
+    <string name="core_text_choose">请选择</string>
+    <string name="core_write_note">请填写</string>
+    <string name="core_text_yes">是</string>
+    <string name="core_text_no">否</string>
+    <string name="core_sure_save">确认保存</string>
+    <string name="core_search">查询</string>
+
+    <!-- 讯飞语音 -->
+    <string name="core_ifly_app_id">5829142b</string>
+
+
+</resources>

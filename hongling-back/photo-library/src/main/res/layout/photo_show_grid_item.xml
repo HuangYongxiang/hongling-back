@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 鏄剧ず瀹氭崯鍗曠収鐗囨椂鐢眎mageView鍜宑heckBox缁勫悎鏄剧ず -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<ImageView
+		android:id="@+id/pic_show_imageView"
+		android:scaleType="centerCrop"
+		android:layout_height="80dp"
+		android:layout_width="80dp"
+		android:background="@mipmap/photo_no_photo"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true" />
+
+
+	<!--<ImageView-->
+		<!--android:id="@+id/photo_local_gridView_item_select"-->
+		<!--android:layout_width="17dp"-->
+		<!--android:layout_height="17dp"-->
+		<!--android:layout_alignBottom="@+id/pic_show_imageView"-->
+		<!--android:layout_alignRight="@+id/pic_show_imageView"-->
+		<!--android:background="@null"-->
+		<!--android:clickable="false"-->
+		<!--android:padding="4dp"-->
+		<!--android:src="@mipmap/photo_local_unselected" />-->
+	<RelativeLayout
+		android:id="@+id/pic_show_hint"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:background="#60ffffff"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:orientation="vertical">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="14dp"
+			android:layout_alignParentBottom="true"
+			android:gravity="center"
+			android:background="#30000000"
+			android:textSize="9sp"
+			android:textColor="@color/core_white"
+			android:text="@string/photo_wait_submit"
+			/>
+	</RelativeLayout>
+</RelativeLayout>

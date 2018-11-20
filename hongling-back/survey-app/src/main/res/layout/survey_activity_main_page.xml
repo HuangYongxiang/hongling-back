@@ -1,0 +1,85 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/core_white"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_btn_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="2dp"
+            android:drawableTop="@drawable/survey_more_deal_selector"
+            android:drawablePadding="5dp"
+            android:text="产品选择"
+            android:textSize="12sp"
+            android:textColor="@color/survey_task_text_color_selector"
+            />
+        <RadioButton
+            android:id="@+id/radio_btn_task"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="2dp"
+            android:drawableTop="@drawable/survey_more_deal_selector"
+            android:drawablePadding="5dp"
+            android:text="合同处理"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:textColor="@color/survey_task_text_color_selector"
+            />
+        <RadioButton
+            android:id="@+id/radio_btn_live"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="2dp"
+            android:drawableTop="@drawable/survey_more_deal_selector"
+            android:drawablePadding="5dp"
+            android:text="合同处理"
+            android:textSize="12sp"
+            android:textColor="@color/survey_task_text_color_selector"
+            android:visibility="gone"
+        />
+        <RadioButton
+            android:id="@+id/radio_btn_query"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="2dp"
+            android:drawableTop="@drawable/survey_query_deal_selector"
+            android:drawablePadding="5dp"
+            android:text="综合查询"
+            android:textSize="12sp"
+            android:textColor="@color/survey_task_text_color_selector"
+        />
+
+    </RadioGroup>
+
+</RelativeLayout>
+

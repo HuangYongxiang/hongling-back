@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="core_index_bar_text_size" format="dimension" />
+    <declare-styleable name="core_index_bar">
+        <attr name="core_index_bar_text_size" />
+        <attr name="core_index_bar_press_background" format="color" />
+    </declare-styleable>
+
+</resources>

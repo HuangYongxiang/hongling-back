@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 閺勫墽銇氱�规碍宕崡鏇犲弾閻楀洦妞傞悽鐪巑ageView閸滃畱heckBox缂佸嫬鎮庨弰鍓с仛 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<ImageView
+		android:id="@+id/pic_show_imageView"
+		android:scaleType="centerCrop"
+		android:layout_height="80dp"
+		android:layout_width="80dp"
+		android:background="@mipmap/photo_no_photo"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true" />
+
+	<RelativeLayout
+		android:id="@+id/pic_show_hint"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:background="#60ffffff"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:orientation="vertical">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="14dp"
+			android:layout_alignParentBottom="true"
+			android:gravity="center"
+			android:background="#30000000"
+			android:textSize="9sp"
+			android:textColor="@color/core_white"
+			android:text="@string/photo_wait_submit"
+			/>
+		<ImageView
+			android:id="@+id/photo_local_gridView_item_select"
+			android:layout_width="17dp"
+			android:layout_height="17dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:background="@null"
+			android:clickable="false"
+			android:layout_margin="4dp"
+			android:src="@mipmap/photo_local_unselected" />
+	</RelativeLayout>
+</RelativeLayout>

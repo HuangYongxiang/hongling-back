@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="core_colorPrimary">#009688</color>
+    <color name="core_colorPrimaryDark">#00796B</color>
+    <color name="core_colorAccent">#4CAF50</color>
+    <color name="core_colorPrimaryLight">#9BCD9B</color>
+    <color name="core_colorTextPrimary">#212121</color>
+    <color name="core_colorTextSecond">#757575</color>
+    <color name="core_colorDivider">#BDBDBD</color>
+    <color name="core_gray">#E5E5E5</color>
+    <color name="core_divider_color">#CDCDCD</color>
+
+    <color name="core_color_5cacee">#5CACEE</color>
+    <color name="core_color_31c27c">#31c27c</color>
+    <color name="core_color_0176da">#0176da</color>
+    <color name="core_color_005eaa">#005eaa</color>
+    <color name="core_color_red">#ff0000</color>
+    <color name="core_theme_red">#ee4837</color>
+    <color name="core_color_43d28d">#43d28d</color>
+    <color name="core_color_f5f5f5">#f5f5f5</color>
+    <color name="core_color_e81d62">#e81d62</color>
+    <color name="core_color_4bae4f">#4bae4f</color>
+    <color name="core_color_2095f2">#2095f2</color>
+    <color name="core_color_512da8">#512da8</color>
+    <color name="core_color_9B30FF">#9B30FF</color>
+    <color name="core_color_cd3e3a">#cd3e3a</color>
+    <color name="core_color_ffd700">#FFD700</color>
+    <color name="core_color_ffb90f">#FFB90F</color>
+    <color name="core_color_616161">#616161</color>
+    <color name="core_color_353535">#353535</color>
+    <color name="core_color_fff8f6">#fff8f6</color>
+</resources>

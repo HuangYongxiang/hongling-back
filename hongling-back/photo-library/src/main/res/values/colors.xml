@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="photo_btn_red">#2095f2</color>
+    <color name="photo_bottom_bg">#fbfbfb</color>
+    <color name="photo_menu_line_color">#D9E1E8</color>
+    <color name="photo_menu_text_color">#333333</color>
+    <color name="photo_detail_list_bar">#F5F5FA</color>
+    <color name="photo_detail_title_color">#666666</color>
+    <color name="photo_popwindow_grey_color">#fafafa</color>
+    <color name="photo_detail_list_title">#999999</color>
+    <color name="photo_header_line_color">#c6c0bb</color>
+    <color name="photo_manhour_list_item_line">#e2e2e2</color>
+    <color name="photo_footer_line">#dcdcdd</color>
+    <color name="photo_main_backgroup_color">#f6f6f6</color>
+    <color name="photo_line_1">#BDBDBD</color>
+    <color name="photo_control_panl">#F0F0F0</color>
+    <color name="photo_line_2">#6C6C6C</color>
+
+    <color name="photo_gray_btn_bg_color">#D0D0D0</color>
+    <color name="photo_edit_text_line_bg">#CDCDCD</color>
+
+    <color name="photo_repair_font_color">#666666</color>
+
+
+</resources>

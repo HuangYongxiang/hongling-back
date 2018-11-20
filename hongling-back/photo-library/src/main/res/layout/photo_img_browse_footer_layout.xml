@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View style="@style/photo_browse_footer_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/photo_delete_tv"
+                style="@style/photo_browse_footer_text"
+                android:drawableLeft="@mipmap/photo_delete_icon"
+                android:text="删除"
+                android:visibility="gone"/>
+
+            <View style="@style/photo_browse_footer_line_v"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/photo_remark_tv"
+                style="@style/photo_browse_footer_text"
+                android:drawableLeft="@mipmap/photo_remark_icon"
+                android:visibility="gone"
+                android:text="备注" />
+
+            <View style="@style/photo_browse_footer_line_v"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/photo_retake_tv"
+                style="@style/photo_browse_footer_text"
+                android:drawableLeft="@mipmap/photo_retake_icon"
+                android:text="拍照" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

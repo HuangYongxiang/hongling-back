@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="survey_color_bbbbbb_gray">#bbbbbb</color>
+    <color name="survey_white">#FFFFFF</color>
+    <color name="survey_color_red">#2095f2</color>
+    <color name="survey_navy">#f5f5fa</color>
+    <color name="survey_gray_btn_bg_color">#D0D0D0</color>
+    <color name="survey_333333">#333333</color>
+    <color name="survey_666666">#666666</color>
+    <color name="survey_999999">#999999</color>
+    <color name="survey_btn_red">#2095f2</color>
+
+    <!-- 登录 -->
+    <color name="survey_login_line">#EAEAEA</color>
+    <color name="survey_login_default_bg">#f4f4f4</color>
+
+    <!-- 案件中心列表 -->
+    <color name="survey_detail_list_name">#333333</color>
+    <color name="survey_report_date_color">#B3B3B3</color>
+    <color name="survey_detail_list_content">#666666</color>
+    <color name="survey_menu_text_color">#333333</color>
+    <color name="survey_menu_line_color">#D9E1E8</color>
+    <color name="survey_filter_line_color">#D8D8D8</color>
+    <color name="survey_detail_title_color">#666666</color>
+    <color name="survey_detail_title_focus_color">#333333</color>
+    <color name="survey_detail_list_title">#999999</color>
+    <color name="survey_detail_list_line">#E9E9E9</color>
+    <color name="survey_detail_list_bar">#F5F5FA</color>
+    <color name="survey_detail_self_info">#999999</color>
+    <color name="survey_repair_font_color">#666666</color>
+    <color name="survey_task_line">#D4D4D4</color>
+    <color name="survey_task_bottom_bg">#fcfcfc</color>
+    <color name="survey_task_item_red_line_color">#2095f2</color>
+
+    <color name="survey_control_panl">#F0F0F0</color>
+
+    <color name="survey_color_ececec_gray">#ececec</color>
+ 
+
+   <color name="survey_edit_text_line_bg">#CDCDCD</color>
+    <color name="survey_manhour_edittext">#2095f2</color>
+    <color name="survey_check_edittext">#ee4837</color>
+    <color name="survey_manhour_type_stroke">#979797</color>
+    <color name="survey_manhour_banjin_solid">#f2f2f2</color>
+    <color name="survey_manhour_penqi_solid">#F1F7FE</color>
+    <color name="survey_manhour_diangong_solid">#F1F8EA</color>
+    <color name="survey_manhour_chaizhuang_solid">#F8F1F9</color>
+    <color name="survey_manhour_jixiu_solid">#FFFBF3</color>
+    <color name="survey_manhour_ditan_solid">#FFF1EF</color>
+    <color name="survey_footer_line">#d3d3d3</color>
+    <color name="survey_manhour_list_item_line">#e2e2e2</color>
+    <color name="survey_popwindow_title_line">#aaaaaa</color>
+    <color name="survey_popwindow_alpha">#60000000</color>
+    <color name="survey_list_item_clicked">#F2F2F2</color>
+    <color name="survey_eval_main_list_item_clicked">#E8E8E8</color>
+
+    <color name="survey_main_backgroup_color">#f6f6f6</color>
+    <color name="survey_popwindow_grey_color">#fafafa</color>
+    <color name="survey_btn_gray_unenable">#C8C8C8</color>
+    <color name="survey_risk_green">#3bbc11</color>
+    <color name="survey_bottom_navi_line">#e4e4e5</color>
+
+
+
+    <color name="survey_colorPrimary">#009688</color>
+    <color name="survey_colorPrimaryDark">#00796B</color>
+    <color name="survey_colorAccent">#4CAF50</color>
+    <color name="survey_colorPrimaryLight">#9BCD9B</color>
+    <color name="survey_colorTextPrimary">#212121</color>
+    <color name="survey_colorTextSecond">#757575</color>
+    <color name="survey_colorDivider">#BDBDBD</color>
+    <color name="survey_gray">#E5E5E5</color>
+    <color name="survey_divider_color">#CDCDCD</color>
+
+    <color name="survey_color_5cacee">#5CACEE</color>
+    <color name="survey_color_31c27c">#31c27c</color>
+    <color name="survey_color_0176da">#0176da</color>
+    <color name="survey_color_005eaa">#005eaa</color>
+    <color name="survey_theme_red">#ee4837</color>
+    <color name="survey_color_43d28d">#43d28d</color>
+    <color name="survey_color_f5f5f5">#f5f5f5</color>
+    <color name="survey_color_e81d62">#e81d62</color>
+    <color name="survey_color_4bae4f">#4bae4f</color>
+    <color name="survey_color_2095f2">#2095f2</color>
+    <color name="survey_color_512da8">#512da8</color>
+    <color name="survey_color_9B30FF">#9B30FF</color>
+    <color name="survey_color_cd3e3a">#cd3e3a</color>
+    <color name="survey_color_ffd700">#FFD700</color>
+    <color name="survey_color_ffb90f">#FFB90F</color>
+    <color name="survey_color_616161">#616161</color>
+    <color name="survey_color_353535">#353535</color>
+    <color name="survey_color_fff8f6">#fff8f6</color>
+
+</resources>

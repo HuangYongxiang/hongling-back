@@ -1,0 +1,44 @@
+<resources>
+
+
+    <string name="photo_dialog_save">保存</string>
+    <string name="photo_dialog_cancel">取消</string>
+    <string name="photo_dialog_delete">删除</string>
+    <string name="photo_dialog_confirm">确定</string>
+
+    <!-- 目录dir -->
+    <string name="photo_dir">/hongling</string>
+    <string name="photo_log_dir">/log</string>
+    <string name="photo_hllog_dir">/hllog</string>
+    <string name="photo_db_dir">/database</string>
+    <string name="photo_dump_dir">/dump</string>
+    <string name="photo_temp_dir">/temp</string>
+    <string name="photo_img_dir">/img</string>
+    <string name="photo_app_dir">/app</string>
+
+    <string name="photo_need_add_photo">请先添加照片</string>
+    <string name="photo_add_photo">补拍</string>
+    <!--照片-->
+    <string name="photo_title">本案照片</string>
+    <string name="photo_survey_title">本车查勘</string>
+    <string name="photo_eval_title">本车定损</string>
+    <string name="photo_third_eval_title">三者定损</string>
+    <string name="photo_submit">提交照片</string>
+    <string name="photo_wait_submit">待提交</string>
+    <string name="photo_edit">编辑</string>
+    <string name="photo_upload">上传</string>
+    <string name="photo_edit_over">完成</string>
+    <string name="photo_local_title">本地照片</string>
+    <string name="photo_local_all">本地照片</string>
+    <string name="photo_local_zero">0张</string>
+    <string name="photo_local_no_sd">暂无外部存储</string>
+    <string name="photo_local_no_photo">未扫描到照片</string>
+    <string name="photo_pop_camera">拍摄新照片</string>
+    <string name="photo_pop_local">从手机相册中选择</string>
+    <string name="photo_upload_task">上传任务</string>
+    <string name="photo_wait_upload">等待上传</string>
+    <string name="photo_upload_succeed">上传成功</string>
+    <string name="photo_upload_failed">上传失败</string>
+    <string name="photo_warm_not_report_no">报案号不能为空</string>
+    <string name="photo_loading_photo">正在加载图片，请稍后...</string>
+</resources>

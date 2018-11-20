@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- 预定义主题样式-->
+    <declare-styleable name="core_theme_style">
+        <attr name="core_title_text_color" format="reference|color"/>
+        <attr name="core_theme_color" format="reference|color"/>
+        <attr name="core_theme_color_primary" format="reference|color"/>
+        <attr name="core_background_color" format="reference|color"/>
+    </declare-styleable>
+
+    <!-- Base application theme. -->
+    <style name="core_AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 去掉actionbar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:windowAnimationStyle">@style/core_TranAnimation.Translucent</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="core_ThemeNight" parent="core_AppTheme.Base">
+        <!--ActionBar的颜色-->
+        <item name="colorPrimary">@color/core_white</item>
+        <item name="background">@color/core_bg_color</item>
+        <!--状态栏的颜色 -->
+        <item name="colorPrimaryDark">@color/core_colorTextPrimary</item>
+        <!-- 随主题而改变的颜色（如CheckBox的颜色）-->
+        <item name="colorAccent">@color/core_theme_red</item>
+        <item name="colorBackgroundFloating">@color/core_theme_red</item>
+        <!-- 预定义主题样式-->
+        <item name="core_title_text_color">@color/core_colorTextPrimary</item>
+        <item name="core_theme_color">@color/core_theme_red</item>
+        <item name="core_theme_color_primary">@color/core_white</item>
+        <item name="core_background_color">@color/core_bg_color</item>
+    </style>
+
+    <style name="core_ThemeDefault" parent="core_AppTheme.Base">
+        <item name="colorPrimary">@color/core_white</item>
+        <item name="background">@color/core_bg_color</item>
+        <item name="colorPrimaryDark">@color/core_color_005eaa</item>
+        <item name="colorAccent">@color/core_color_2095f2</item>
+        <item name="colorBackgroundFloating">@color/core_color_5cacee</item>
+        <!-- 预定义主题样式-->
+        <item name="core_title_text_color">@color/core_colorTextPrimary</item>
+        <item name="core_theme_color">@color/core_color_0176da</item>
+        <item name="core_theme_color_primary">@color/core_white</item>
+        <item name="core_background_color">@color/core_bg_color</item>
+    </style>
+
+    <style name="core_TranAnimation.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+    </style>
+
+
+    <style name="core_TranAnimation.Translucent" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="core_customDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/core_colorTextPrimary</item>
+        <item name="android:background">@color/core_white</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!--TextViewTextThem样式-->
+    <declare-styleable name="core_TextViewTextThemeStyle">
+        <!-- 是否选择 -->
+        <attr name="core_checked" format="boolean" />
+    </declare-styleable>
+
+</resources>

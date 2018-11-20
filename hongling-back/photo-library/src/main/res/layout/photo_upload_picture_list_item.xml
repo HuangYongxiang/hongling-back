@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 显示定损单照片时由imageView和checkBox组合显示 -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_pic_bold"
+        android:orientation="vertical">
+        <!--     android:background="@drawable/round_corner_shape" -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ds_imgPic"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/pic_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.hl.photo.ui.widget.HorizontalProgressBarWithNumber
+            android:id="@+id/id_progressbar01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:padding="5dp" />
+
+        <CheckBox
+            android:id="@+id/ds_imgId"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_horizontal"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/finish_flag"
+            style="@style/photo_circle_style"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_options.xml",
+        "source": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\bundles\\debug\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\include_pickerview_topbar.xml",
+        "source": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\bundles\\debug\\res\\layout\\include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_basepickerview.xml",
+        "source": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_basepickerview.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_time.xml",
+        "source": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\bundles\\debug\\res\\layout\\pickerview_time.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\tooltip.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\tooltip.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\layout\\abc_select_dialog_material.xml"
+    }
+]

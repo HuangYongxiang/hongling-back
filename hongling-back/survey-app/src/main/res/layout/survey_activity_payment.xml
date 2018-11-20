@@ -1,0 +1,340 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_layout"
+            tools:ignore="NotSibling">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/core_white"
+                        android:orientation="vertical">
+
+                        <View style="@style/survey_value_with_bar" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+                                    android:text="合同号      " />
+
+                                <TextView
+                                    android:id="@+id/pay_contract_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:text="123456"
+                                    android:textColor="@color/survey_menu_text_color"
+                                    android:textSize="@dimen/core_text_size_18" />
+                            </LinearLayout>
+
+                            <View
+                                style="@style/survey_detail_red_line"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/core_side_margin_17"
+                            android:paddingRight="@dimen/core_side_margin_17"
+                            android:visibility="gone">
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/pay_contract_no"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="@dimen/core_text_size_18"-->
+                            <!--android:textColor="@color/survey_menu_text_color"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="123456"-->
+                            <!--/>-->
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/core_white"
+                        android:orientation="vertical">
+
+                        <View style="@style/survey_value_with_bar" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+
+                                    android:text="合同价格 " />
+
+                                <TextView
+                                    android:id="@+id/pay_money"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:text="￥1024"
+                                    android:textColor="@color/survey_menu_text_color"
+                                    android:textSize="@dimen/core_text_size_18" />
+                            </LinearLayout>
+
+                            <View
+                                style="@style/survey_detail_red_line"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/core_side_margin_17"
+                            android:paddingRight="@dimen/core_side_margin_17"
+                            android:visibility="gone">
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/pay_money"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="@dimen/core_text_size_18"-->
+                            <!--android:textColor="@color/survey_menu_text_color"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="￥1024"-->
+                            <!--/>-->
+
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+                    </LinearLayout>
+
+                    <include layout="@layout/survey_query_layer_img_layout" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/core_white"
+                        android:orientation="vertical">
+
+                        <View style="@style/survey_value_with_bar" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="17dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/survey_detail_title"
+                                    android:text="支付方式" />
+                            </LinearLayout>
+
+                            <View style="@style/survey_detail_red_line" />
+                        </LinearLayout>
+
+
+                        <View style="@style/survey_value_with_line" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/core_side_margin_17"
+                            android:paddingRight="@dimen/core_side_margin_17">
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/core_side_margin_17"
+                                android:src="@mipmap/survey_check_box_selected" />
+
+                            <TextView
+                                android:id="@+id/pay_way"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="微信"
+                                android:clickable="true"
+                                android:drawablePadding="10dp"
+                                android:drawableLeft="@drawable/survey_check_box_selected"
+                                android:textColor="@color/survey_menu_text_color"
+                                android:textSize="@dimen/core_text_size_18" />
+
+
+                            <TextView
+                                android:id="@+id/pay_fu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="支付宝"
+                                android:clickable="false"
+                                android:drawablePadding="10dp"
+                                android:drawableLeft="@drawable/survey_check_box_default"
+                                android:textColor="@color/survey_menu_text_color"
+                                android:textSize="@dimen/core_text_size_18" />
+                        </LinearLayout>
+
+                        <View style="@style/survey_value_with_line" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/core_white"
+                            android:orientation="vertical">
+
+                            <View style="@style/survey_value_with_bar" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/contract_title"
+                                        style="@style/survey_detail_title"
+                                        android:text="请您扫码支付" />
+                                </LinearLayout>
+
+                                <View style="@style/survey_detail_red_line" />
+                            </LinearLayout>
+
+
+                            <View style="@style/survey_value_with_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/core_side_margin_17"
+                                android:paddingRight="@dimen/core_side_margin_17">
+
+                                <ImageView
+                                    android:id="@+id/payment_pic"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/survey_payment_weixin_icon" />
+
+                            </LinearLayout>
+
+                            <View style="@style/survey_value_with_line" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/survey_query_layer_img_layout" />
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/error_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/core_theme_color"
+            android:drawableLeft="@mipmap/survey_icon_rmd01"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/core_remind_unfilled"
+            android:textColor="@color/survey_white"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View style="@style/survey_value_with_bar" />
+
+            <TextView
+                android:id="@+id/agree_button"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/survey_dolaig_sure_bload_line"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="支付确认"
+                android:textColor="@color/core_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- editText 输入框样式-->
+    <style name="core_edit_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textCursorDrawable">@drawable/core_edit_text_cursor_color</item>
+        <item name="android:background">@drawable/core_edit_text_bold_selector</item>
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="typeItemMV"
+            type="com.hl.contract.business.main.viewmodel.TypeItemModelView" />
+
+        <variable
+            name="position"
+            type="int" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:onClick="@{ v -> typeItemMV.onClick(position) }"
+            android:paddingLeft="17dp"
+            android:text="@{ typeItemMV.typeItem.value }"
+            android:textColor="@color/core_text_color_333333"
+            android:textSize="@dimen/core_text_size_15" />
+
+        <View
+            style="@style/core_cut_off_line_h"
+            android:visibility="@{ typeItemMV.isLineShow ? View.VISIBLE : View.GONE }" />
+    </LinearLayout>
+
+</layout>

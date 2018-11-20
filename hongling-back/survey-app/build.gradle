@@ -1,0 +1,81 @@
+    apply plugin: 'com.android.application'
+    apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId "com.hl.contract"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 5
+        versionName "1.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resourcePrefix "survey_"
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dexOptions {
+        //最大堆内存
+        javaMaxHeapSize "4g"
+        //预编译
+        preDexLibraries = false
+        //线程数
+        threadCount = 6
+    }
+    signingConfigs {
+        debug {
+            storeFile file("debug.jks")
+            storePassword "123456"
+            keyAlias "easyandroid"
+            keyPassword "123456"
+        }
+    }
+    configurations {
+        all*.exclude  module: 'support-v4'
+    }
+}
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.hl.contract.table.dao'
+    targetGenDir 'src/main/java'
+}
+
+    dependencies {
+        androidTestImplementation rootProject.ext.dependencies.runner
+        androidTestImplementation rootProject.ext.dependencies.espresso
+        testImplementation rootProject.ext.dependencies.junit
+        implementation rootProject.ext.dependencies.constraint
+        implementation(rootProject.ext.dependencies.appcompat_v7)
+        implementation rootProject.ext.dependencies.eventbus
+        implementation rootProject.ext.dependencies.greendao
+        implementation rootProject.ext.dependencies.sqlcipher
+        implementation rootProject.ext.dependencies.retrofit
+        implementation rootProject.ext.dependencies.recyclerview_v7
+        implementation rootProject.ext.dependencies.fastjson
+        implementation rootProject.ext.dependencies.gson
+        implementation project(':core-lib')
+        implementation project(':picker-view-library')
+        implementation project(':ifly-library')
+        implementation project(':ocr_library')
+//        implementation project(':amap')
+//        implementation project(':sketch')
+        implementation project(':photo-library')
+//        implementation project(':signature')
+//        implementation files('libs/ocr-sdk.jar')
+//        implementation project(':ocr_ui')
+
+        implementation 'com.pgyersdk:sdk:3.0.0'
+    }

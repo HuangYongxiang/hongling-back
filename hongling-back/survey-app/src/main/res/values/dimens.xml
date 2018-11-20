@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="survey_default_dimen">0dp</dimen>
+    <dimen name="survey_default_adapter_height_34">34dp</dimen>
+    <dimen name="survey_fab_margin">16dp</dimen>
+    <dimen name="survey_default_padding_dimen">30dp</dimen>
+    <dimen name="survey_check_default_dimen_20">20dp</dimen>
+    <!--损失项目左侧宽度-->
+    <dimen name="survey_left_width_65">65dp</dimen>
+    <!--输入框高度-->
+    <dimen name="survey_edit_text_height_39">39dp</dimen>
+
+    <!--登录-->
+    <dimen name="survey_login_button_height">50dip</dimen>
+    <dimen name="survey_login_image_height">80dip</dimen>
+    <dimen name="survey_login_image_top_height">49dip</dimen>
+    <dimen name="survey_login_text_height">60dip</dimen>
+    <dimen name="survey_login_text_view_border_radius">8dip</dimen>
+
+    <dimen name="survey_spinner_padding">3dp</dimen>
+</resources>

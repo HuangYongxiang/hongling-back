@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hl.contract.core.DemoActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/theme_default"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:text="点我切换主题"
+            android:textSize="10sp"
+            android:textColor="@color/core_white"
+            android:background="@color/core_theme_color"
+            android:onClick="changeTheme"
+            android:clickable="true"
+
+        />
+        <TextView
+            android:layout_below="@+id/theme_default"
+            android:layout_alignStart="@+id/theme_default"
+            android:layout_alignEnd="@+id/theme_default"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认主题"
+            android:textSize="10sp"
+            android:textColor="@color/core_colorTextPrimary"
+        />
+
+        <TextView
+            android:id="@+id/theme_night"
+            android:layout_toEndOf="@+id/theme_default"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/core_color_0176da"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:onClick="changeTheme"
+            android:clickable="true"
+            android:text="点我切换主题"
+            android:textSize="10sp"
+            android:textColor="@color/core_white"
+            />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_alignStart="@+id/theme_night"
+            android:layout_alignEnd="@+id/theme_night"
+            android:layout_below="@+id/theme_night"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/core_colorTextPrimary"
+            android:text="蓝色主题"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

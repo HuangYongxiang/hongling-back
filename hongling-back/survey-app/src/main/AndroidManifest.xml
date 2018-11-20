@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hl.contract">
+    <!-- 获取读取通讯录记录的权限 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 蒲公英-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 获取MAC地址-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions"/> <!-- 获取logcat日志 -->
+
+    <application
+        android:name=".core.SurveyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/survey_ic_launcher"
+        android:label="@string/survey_app_name"
+        android:roundIcon="@mipmap/survey_ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/core_ThemeDefault"
+        tools:replace="android:name,android:icon,android:theme,android:label,android:roundIcon">
+
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="7b046189f0f9fa2e9333456f16a5781b"/>
+
+
+        <activity android:name=".business.login.view.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".business.main.view.MainPageActivity"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".business.personalcenter.view.PersonalCenterActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.setting.view.SettingActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.setting.view.ChangeThemeActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.query.view.QueryResultActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.main.view.CreateContractActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.main.view.ContractServiceActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.main.view.QueryContractQueryActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.main.view.ProductContentActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.main.view.ContractContentActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.main.view.ContractPaymentActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".business.main.view.PaymentActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+    </application>
+
+</manifest>

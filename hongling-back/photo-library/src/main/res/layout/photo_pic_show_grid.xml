@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 显示定损单照片时由imageView和checkBox组合显示 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--     android:background="@drawable/round_corner_shape" -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="74dip"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/pic_show_imageView"
+            android:layout_width="74dip"
+            android:layout_height="74dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/photo_dash_bg"
+            android:padding="20dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/pic_show_scan_img_upload_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/photo_check_box_unchecked"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pic_desc"
+        style="@style/photo_survey_image_type_text" />
+
+    <CheckBox
+        android:id="@+id/ds_imgId"
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"></CheckBox>
+
+    <TextView
+        android:id="@+id/finish_flag"
+        style="@style/photo_circle_style"
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+</LinearLayout>

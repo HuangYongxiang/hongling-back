@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义拍照功能 -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Surface浮层 -->
+        <SurfaceView
+            android:id="@+id/mSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.hl.photo.ui.widget.CaptureFocuseView
+            android:id="@+id/viewFocuse"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+        <!-- 操作界面浮层 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/mHswFilter"
+                android:layout_below="@+id/mImageViewAutoFocus"
+                android:layout_toEndOf="@+id/mImageViewAutoFocus" />
+
+            <ImageView
+                android:id="@+id/photo_top_left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/photo_topleft"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="60dp" />
+
+            <ImageView
+                android:id="@+id/photo_top_right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/photo_topright"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="60dp" />
+
+            <ImageView
+                android:id="@+id/photo_bottom_left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/photo_bottomleft"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="170dp" />
+
+            <ImageView
+                android:id="@+id/photo_bottom_right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/photo_bottomright"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="170dp" />
+            <!-- Top模块 -->
+            <RelativeLayout
+                android:id="@+id/mLayoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="10dp">
+
+                <!-- Top>>Left -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical">
+
+                    <!-- 关闭按钮 -->
+                    <ImageView
+                        android:id="@+id/mBtnExit"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/photo_camera_exit_selector"
+                        android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+
+                <!-- Top>>Middle -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true">
+
+                    <!-- 设置按钮 -->
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/mBtnSetting"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/photo_camera_setting_selector"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <!-- Top>>Right -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical">
+                    <!-- 闪关灯按钮 -->
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/mBtnFlash"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/photo_camera_flash_off_selector"
+                        android:layout_marginRight="10dp" />
+                    <!-- 切换相机按钮 -->
+                    <!--<ImageView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/mBtnSwitch"-->
+                    <!--android:layout_width="@dimen/camera_top_size_switch"-->
+                    <!--android:layout_height="@dimen/camera_top_size_switch"-->
+                    <!--android:background="@drawable/camera_switch_selector"-->
+                    <!--/>-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- Bottom模块 -->
+            <RelativeLayout
+                android:id="@+id/mLayoutBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/photo_camera_bottom_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <!-- 滤镜按钮 -->
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/mBtnFilter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/photo_camera_filter_selector"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+                <!-- 拍照按钮 -->
+                <ImageView
+                    android:id="@+id/mBtnCamera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/photo_camera_start_selector"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <!-- 本地按钮 -->
+                <!--<ImageView-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/mBtnLocal"-->
+                <!--android:layout_width="@dimen/camera_bottom_size_local"-->
+                <!--android:layout_height="@dimen/camera_bottom_size_local"-->
+                <!--android:background="@drawable/camera_local_selector"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+            </RelativeLayout>
+
+            <!-- 对焦框 -->
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/mImageViewAutoFocus"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:src="@mipmap/photo_camera_autofocus_default" />
+
+            <!-- 焦距拖动条 -->
+            <!--<LinearLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/mLayoutSeekBarZoom"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@id/mLayoutBottom"-->
+            <!--android:layout_marginBottom="20dip"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:layout_marginRight="10dip"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!-->-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/mBtnSeekBarZoomOut"-->
+            <!--android:layout_width="8dp"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:background="@drawable/camera_seekbar_zoom_out"-->
+            <!--/>-->
+
+            <!--<SeekBar-->
+            <!--android:id="@+id/mSeekBarZoom"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:max="100"-->
+            <!--android:maxHeight="8dp"-->
+            <!--android:minHeight="8dp"-->
+            <!--android:paddingLeft="16dip"-->
+            <!--android:paddingRight="16dip"-->
+            <!--android:progressDrawable="@drawable/camera_seekbar_zoom_style"-->
+            <!--android:thumb="@drawable/camera_seekbar_zoom_thumb"-->
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/mBtnSeekBarZoomIn"-->
+            <!--android:layout_width="8dp"-->
+            <!--android:layout_height="8dp"-->
+            <!--android:background="@drawable/camera_seekbar_zoom_in"-->
+            <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <!-- 滤镜选择 -->
+            <com.hl.photo.ui.widget.HorizontalScrollWidget
+                android:visibility="visible"
+                android:id="@+id/mHswFilter"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_above="@id/mLayoutBottom"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/photo_camera_filter_popup_bg">
+
+            </com.hl.photo.ui.widget.HorizontalScrollWidget>
+
+            <TextView
+                android:id="@+id/tv_camera_image_type_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/photo_text_size_32"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="@dimen/photo_margin_15" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

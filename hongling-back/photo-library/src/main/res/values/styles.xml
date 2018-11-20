@@ -1,0 +1,95 @@
+<resources>
+
+    <style name="photo_cut_off_line1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">26px</item>
+        <item name="android:background">@color/photo_detail_list_bar</item>
+    </style>
+
+    <style name="photo_cut_off_line2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/photo_gray_btn_bg_color</item>
+    </style>
+
+    <style name="photo_anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="photo_browse_footer_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/photo_menu_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="photo_browse_footer_line_v">
+        <item name="android:layout_width">0.4dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/photo_header_line_color</item>
+    </style>
+
+    <style name="photo_browse_footer_line_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/photo_header_line_color</item>
+    </style>
+
+    <style name="photo_browse_remark_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/core_black</item>
+        <item name="android:alpha">0.4</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <declare-styleable name="photo_HorizontalProgressBarWithNumber">
+        <attr name="photo_progress_unreached_color" format="color" />
+        <attr name="photo_progress_reached_color" format="color" />
+        <attr name="photo_progress_reached_bar_height" format="dimension" />
+        <attr name="photo_progress_unreached_bar_height" format="dimension" />
+        <attr name="photo_progress_text_size" format="dimension" />
+        <attr name="photo_progress_text_color" format="color" />
+        <attr name="photo_progress_text_offset" format="dimension" />
+        <attr name="photo_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+    <!--照片-->
+    <style name="photo_survey_image_type_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/core_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">5dip</item>
+    </style>
+    <style name="photo_circle_style">
+        <item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">60dip</item>
+        <item name="android:background">@drawable/photo_write_circle</item>
+    </style>
+
+    <style name="photo_textShadow000000">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+</resources>

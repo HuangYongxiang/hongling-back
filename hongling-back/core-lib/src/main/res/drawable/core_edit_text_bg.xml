@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--textView editText 边框 0.4dp-->
+    <corners android:radius="@dimen/core_corner_radius_4" />
+    <stroke
+        android:width="@dimen/core_frame_line_height_0.4"
+        android:color="@color/core_line_color"/>
+    <solid android:color="@color/core_white"></solid>
+
+</shape>

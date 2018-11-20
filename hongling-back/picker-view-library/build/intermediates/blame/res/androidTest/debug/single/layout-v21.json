@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\layout-v21\\notification_action.xml"
+    }
+]

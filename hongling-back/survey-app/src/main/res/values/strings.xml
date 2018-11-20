@@ -1,0 +1,238 @@
+<resources>
+    <string name="survey_app_name">宏瓴科技</string>
+    <string name="survey_user_id_empty">用户id为空，请先登录</string>
+    <string name="survey_login">登录</string>
+    <string name="survey_login_save_pwd">记住密码</string>
+    <string name="survey_net_error">请检查网络连接</string>
+    <string name="survey_please_input_user_name">请输入用户名</string>
+    <string name="survey_please_input_password">请输入密码</string>
+    <string name="survey_error_username_password">用户名或密码错误</string>
+    <string name="survey_login_success">登录成功</string>
+    <string name="survey_login_fail">登录失败</string>
+    <string name="survey_not_open">版本原因，功能暂未开放</string>
+
+    <string name="survey_person_info_center">个人中心</string>
+    <string name="survey_pending_task">待审批合同数</string>
+    <string name="survey_pending_object">合同总数</string>
+
+    <!-- 个人中心 -->
+    <string name="survey_setting">设置</string>
+    <string name="survey_check_update">检查更新</string>
+    <string name="survey_exit_current_account">退出当前账号</string>
+    <string name="survey_current_version">当前版本：</string>
+    <string name="survey_sync_dict_info">同步字典</string>
+    <string name="survey_setting_clear_cache">清空缓存</string>
+    <string name="survey_setting_timeout_reminder">超时提醒</string>
+    <string name="survey_setting_change_theme">更换主题</string>
+    <string name="survey_setting_photo_quality">照片质量</string>
+
+    <!-- 更多 -->
+    <string name="survey_take_pricture_upload">拍照上传</string>
+
+
+    <!--基本信息-->
+    <string name="survey_text_plate_no_inf">车牌号</string>
+
+    <string name="survey_text_vin_no">车架号(VIN)</string>
+    <string name="survey_write_note">请填写</string>
+    <string name="survey_write_noting">暂无</string>
+    <string name="survey_text_phone">联系电话</string>
+    <string name="survey_text_male">男</string>
+    <string name="survey_text_female">女</string>
+    <string name="survey_text_credentials_typ">证件类型</string>
+    <string name="survey_text_products_typ">产品类型</string>
+
+    <string name="survey_service_validity_two">2年(4万公里)</string>
+    <string name="survey_service_validity_three">3年(6万公里)</string>
+    <string name="survey_service_validity_four">4年(8万公里)</string>
+    <string name="survey_service_validity_five">5年(10万公里)</string>
+    <string name="survey_service_validity_six">6年(12万公里)</string>
+
+
+    <string name="survey_service_validity_three2">3年(30万公里)</string>
+    <string name="survey_service_validity_four2">4年(40万公里)</string>
+    <string name="survey_service_validity_five2">5年(50万公里)</string>
+    <string name="survey_service_validity_six2">6年(60万公里)</string>
+
+    <!--识别-->
+    <string name="survey_hint_text_ocr_xingshi_license">识别行驶证带出</string>
+    <string name="survey_hint_text_ocr_driver_license">识别驾驶证带出</string>
+    <string name="survey_hint_text_ocr_id_card">识别身份证带出</string>
+    <string name="survey_hint_text_ocr_bank_card">识别银行卡带出</string>
+
+    <string name="survey_text_product_model">车辆品牌</string>
+    <string name="survey_text_product_family">车辆车系</string>
+    <string name="survey_text_product_vehicle">车辆车型</string>
+    <string name="survey_text_plate_type01">大型汽车号牌</string>
+    <string name="survey_text_plate_type02">小型汽车号牌</string>
+    <string name="survey_text_plate_type03">使馆汽车号牌</string>
+    <string name="survey_text_plate_type04">领馆汽车号牌</string>
+    <string name="survey_text_plate_type05">境外汽车号牌</string>
+    <string name="survey_text_plate_type06">外籍汽车号牌</string>
+    <string name="survey_text_plate_type07">两、三轮摩托车号牌</string>
+    <string name="survey_text_plate_type08">轻便摩托车号牌</string>
+    <string name="survey_text_plate_type09">使馆摩托车号牌</string>
+    <string name="survey_text_plate_type10">领馆摩托车号牌</string>
+    <string name="survey_text_plate_type11">境外摩托车号牌</string>
+    <string name="survey_text_plate_type12">外籍摩托车号牌</string>
+    <string name="survey_text_plate_type13">农用运输车号牌</string>
+    <string name="survey_text_plate_type14">拖拉机号牌</string>
+    <string name="survey_text_plate_type15">挂车号牌</string>
+    <string name="survey_text_plate_type16">教练汽车号牌</string>
+    <string name="survey_text_plate_type17">教练摩托车号牌</string>
+    <string name="survey_text_plate_type18">试验汽车号牌</string>
+    <string name="survey_text_plate_type19">试验摩托车号牌</string>
+    <string name="survey_text_plate_type20">临时入境汽车号牌</string>
+    <string name="survey_text_plate_type21">临时入境摩托车号牌</string>
+    <string name="survey_text_plate_type22">临时行驶车号牌</string>
+    <string name="survey_text_plate_type23">警用汽车号牌</string>
+    <string name="survey_text_plate_type24">警用摩托车号牌</string>
+    <!--<string nasurvey_me="text_plate_type25">专用机械</string>-->
+    <!--<string nasurvey_me="text_plate_type26">警备摩托车</string>-->
+    <!--<string nasurvey_me="text_plate_type27">大型警车</string>-->
+    <!--<string nasurvey_me="text_plate_type32">二轮摩托车</string>-->
+    <string name="survey_text_plate_type31">武警号牌</string>
+    <string name="survey_text_plate_type32">军队号牌</string>
+    <string name="survey_text_plate_type99">其他号牌</string>
+    <string name="survey_text_all">全部</string>
+    <string name="survey_task_money">￥%1$s</string>
+    <string name="survey_text_choose">请选择</string>
+    <string name="survey_yes">是</string>
+    <string name="survey_no">否</string>
+    <string name="survey_not_sure">不确定</string>
+    <string name="survey_colon">：</string>
+    <string name="survey_text_credentials_no">证件号码</string>
+    <string name="survey_service_validity_type">合同年限</string>
+
+    <!--涉案车辆-->
+    <string name="survey_text_engine_no">发动机号</string>
+    <string name="survey_text_lisence_type">号牌种类</string>
+    <string name="survey_text_buying_price">新车购置价</string>
+    <string name="survey_text_is_import">国产/进口</string>
+    <string name="survey_text_enrol_date">初次登记年月</string>
+    <string name="survey_text_seat_no">座位数</string>
+    <string name="survey_text_power">功率</string>
+    <string name="survey_text_displacement">排量</string>
+    <string name="survey_text_tonnage">吨位(核定载质量)</string>
+    <string name="survey_text_car_color">车身颜色</string>
+    <string name="survey_text_plate_color">车牌颜色</string>
+
+    <!--驾驶员-->
+    <string name="survey_text_driver_contact_number">联系电话</string>
+    <string name="survey_text_driver_certificate_type">证件类型</string>
+    <string name="survey_text_driver_certificate_no">证件号码</string>
+    <string name="survey_text_driver_sex">驾驶员性别</string>
+    <string name="survey_text_driver_age">驾驶员年龄</string>
+    <string name="survey_text_driver_license_number">驾驶证号码</string>
+    <string name="survey_text_drive_type">准驾车型</string>
+    <string name="survey_text_driver_territorial">驾驶员属地</string>
+    <string name="survey_text_certification_authority">颁证机关</string>
+    <string name="survey_text_education_degree">文化程度</string>
+    <string name="survey_text_driver_issue_date">初次领证日期</string>
+    <string name="survey_text_driver_unit_address">单位或地址</string>
+
+
+
+    <!--准驾车型-->
+    <string name="survey_driver_type_c1">C1(小型汽车)</string>
+    <string name="survey_driver_type_a1">A1(大型客车)</string>
+    <string name="survey_driver_type_a2">A2(牵引车)</string>
+    <string name="survey_driver_type_a3">A3(城市公交车)</string>
+    <string name="survey_driver_type_b1">B1(中型客车)</string>
+    <string name="survey_driver_type_b2">B2(大型货车)</string>
+    <string name="survey_driver_type_c2">C2(小型自动档汽车)</string>
+    <string name="survey_driver_type_c3">C3(低速载货汽车)</string>
+    <string name="survey_driver_type_c4">C4(三轮汽车)</string>
+    <string name="survey_driver_type_d">D(普通三轮摩托车)</string>
+    <string name="survey_driver_type_e">E(普通二轮摩托车)</string>
+    <string name="survey_driver_type_f">F(轻便摩托车)</string>
+    <string name="survey_driver_type_m">M轮式自行机械车</string>
+    <string name="survey_driver_type_n">N无轨电车</string>
+    <string name="survey_driver_type_p">P有轨电车</string>
+
+
+    <!--使用性质-->
+    <string name="survey_use_property_jiayong">营运</string>
+    <string name="survey_use_property_yunying">运营</string>
+    <string name="survey_use_property_passenger_car">非营运</string>
+
+
+
+    <!--保险公司-->
+    <string name="survey_company_type_picc">中国人民财产保险股份有限公司</string>
+    <string name="survey_company_type_paic">中国平安财产保险股份有限公司</string>
+    <string name="survey_company_type_cpic">中国太平洋财产保险股份有限公司</string>
+    <string name="survey_company_type_gpic">中国人寿财产保险股份有限公司</string>
+    <string name="survey_company_type_ccic">中国大地财产保险股份有限公司</string>
+    <string name="survey_company_type_cicp">中华联合财产保险股份有限公司</string>
+    <string name="survey_company_type_ygbx">阳光财产保险股份有限公司</string>
+    <string name="survey_company_type_tpbx">安盛天平财产保险股份有限公司</string>
+    <string name="survey_company_type_axbx">安心财产保险股份有限公司</string>
+    <string name="survey_company_type_abic">安邦财产保险股份有限公司</string>
+    <string name="survey_company_type_aics">永诚财产保险股份有限公司</string>
+    <string name="survey_company_type_azcn">安联财产保险（中国）有限公司</string>
+    <string name="survey_company_type_bgic">北部湾财产保险股份有限公司</string>
+    <string name="survey_company_type_boci">中银保险有限公司</string>
+    <string name="survey_company_type_caic">长安责任保险股份有限公司</string>
+    <string name="survey_company_type_chac">诚泰财产保险股份有限公司</string>
+    <string name="survey_company_type_haic">华安财产保险股份有限公司</string>
+    <string name="survey_company_type_htic">华泰财产保险股份有限公司</string>
+    <string name="survey_company_type_lihi">利宝保险有限公司</string>
+    <string name="survey_company_type_spic">三星财产保险（中国）有限公司</string>
+    <string name="survey_company_type_taic">天安财产保险股份有限公司</string>
+    <string name="survey_company_type_tpic">太平财产保险有限公司</string>
+    <string name="survey_company_type_xdcx">信达财产保险股份有限公司</string>
+    <string name="survey_company_type_yaic">永安财产保险股份有限公司</string>
+    <string name="survey_company_type_zapa">众安在线财产保险股份有限公司</string>
+
+
+    <!--与车主关系-->
+    <string name="survey_relation_is_owner">车主本人</string>
+    <string name="survey_relation_is_not_owner">非车主本人</string>
+    <string name="survey_text_province">所在省份</string>
+    <string name="survey_text_city">所在市区</string>
+    <string name="survey_text_county">所在市县</string>
+
+
+    <!--证件类型-->
+    <string name="survey_text_product_type_1">三电延保</string>
+    <string name="survey_text_product_type_2">电池延保</string>
+    <!--证件类型-->
+    <string name="survey_text_identity_card">居民身份证</string>
+    <string name="survey_text_credentials_2">居民户口薄</string>
+    <string name="survey_text_credentials_3">驾驶证</string>
+    <string name="survey_text_credentials_4">军官证</string>
+    <string name="survey_text_credentials_5">士兵证</string>
+    <string name="survey_text_credentials_6">军官离退休证</string>
+    <string name="survey_text_credentials_7">中国护照</string>
+    <string name="survey_text_credentials_8">异常身份证</string>
+    <string name="survey_text_credentials_41">港澳通行证</string>
+    <string name="survey_text_credentials_42">台湾通行证</string>
+    <string name="survey_text_credentials_51">外国护照</string>
+    <string name="survey_text_credentials_52">旅行证</string>
+    <string name="survey_text_credentials_53">居留证件</string>
+    <string name="survey_text_credentials_71">组织机构代码证</string>
+    <string name="survey_text_credentials_72">税务登记证</string>
+    <string name="survey_text_credentials_73">营业执照</string>
+    <string name="survey_text_credentials_99">其他证件</string>
+
+
+
+    <string name="survey_cardtype_8020001">身份证</string>
+    <string name="survey_cardtype_8020002">组织机构</string>
+    <!--已定义 -->
+    <string name="survey_eval_base_info">基本信息</string>
+    <string name="survey_operate">操作</string>
+    <string name="survey_add">添加</string>
+
+
+    <string name="survey_dialog_cancel">取消</string>
+    <string name="survey_dialog_confirm">确定</string>
+    <string name="survey_dialog_default_title">Here\'s a message!</string>
+    <string name="survey_dialog_delete">删除</string>
+    <string name="survey_dialog_remind">温馨提醒</string>
+    <string name="survey_dialog_save">保存</string>
+
+    <string name="survey_text_you">是</string>
+    <string name="survey_text_meiyou">否</string>
+</resources>

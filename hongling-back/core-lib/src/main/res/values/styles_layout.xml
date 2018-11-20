@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--分隔线 横线 样式-->
+    <style name="core_cut_off_line_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/core_frame_line_height_0.4</item>
+        <item name="android:background">@color/core_line_color</item>
+    </style>
+
+    <!--分隔线 竖线 样式-->
+    <style name="core_cut_off_line_v">
+        <item name="android:layout_width">@dimen/core_frame_line_height_0.4</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/core_line_color</item>
+    </style>
+
+    <!--信息展示 LinearLayout 样式-->
+    <style name="core_basic_item_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/core_info_item__height_50</item>
+        <item name="android:paddingLeft">@dimen/core_side_margin_17</item>
+        <item name="android:paddingRight">@dimen/core_side_margin_17</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--信息展示 左侧 basic TextView 样式-->
+    <style name="core_basic_left_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/core_text_size_16</item>
+    </style>
+
+    <!--信息展示 左侧必填 required TextView 样式-->
+    <style name="core_basic_required_left" parent="core_basic_left_style">
+        <item name="android:textColor">@color/core_text_color_333333</item>
+    </style>
+
+    <!--信息展示 右侧 basic View 样式-->
+    <style name="core_basic_right_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">@dimen/core_text_size_16</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:hint">@string/core_write_note</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--信息展示 右侧必填 required View 样式-->
+    <style name="core_basic_required_right" parent="core_basic_right_style">
+        <item name="android:textColor">@color/core_text_color_666666</item>
+        <item name="android:textColorHint">@color/core_text_color_666666</item>
+    </style>
+
+    <!--信息展示 左侧非必填 unRequired TextView 样式-->
+    <style name="core_basic_un_required_left" parent="core_basic_left_style">
+        <item name="android:textColor">@color/core_text_color_999999</item>
+    </style>
+
+    <!--信息展示 右侧非必填 unRequired View 样式-->
+    <style name="core_basic_un_required_right" parent="core_basic_right_style">
+        <item name="android:textColor">@color/core_text_color_999999</item>
+        <item name="android:textColorHint">@color/core_text_color_999999</item>
+    </style>
+
+    <!--主页面 功能模块 未完成前 layout 样式-->
+    <style name="core_main_module_not_finished_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--主页面 功能模块 完成后 layout 样式-->
+    <style name="core_main_module_finished_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

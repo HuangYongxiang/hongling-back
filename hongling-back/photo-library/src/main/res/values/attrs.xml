@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="photo_Rotate3dAnimation">
+        <attr name="photo_rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="photo_fromDeg" format="float" />
+        <attr name="photo_toDeg" format="float" />
+        <attr name="photo_pivotX" format="fraction"/>
+        <attr name="photo_pivotY" format="fraction" />
+    </declare-styleable>
+
+<!--
+    <declare-styleable name="CircleProgressbar">
+    <attr name="radius" format="dimension"/>
+    <attr name="strokeWidth" format="dimension"/>
+    <attr name="ringColor" format="color"/>
+    </declare-styleable>
+
+    <attr name="indexBarTextSize" format="dimension" />
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+-->
+
+</resources>

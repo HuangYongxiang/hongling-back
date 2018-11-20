@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@mipmap/survey_top_back_ground"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_pending_report"
+            style="@style/survey_task_list_title_style" />
+
+        <TextView
+            style="@style/survey_task_list_content_style"
+            android:text="@string/survey_pending_task" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/edit_area_divider"
+        android:layout_width="1dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="#66cbcbcb" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_pending_task"
+            style="@style/survey_task_list_title_style" />
+
+        <TextView
+            style="@style/survey_task_list_content_style"
+            android:text="@string/survey_pending_object" />
+    </LinearLayout>
+
+</LinearLayout>

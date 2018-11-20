@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\b9702d6ff63fa6f59c0c8d500871ed3c\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\AppStore\\hongling-back\\hongling-back\\hongling-back\\picker-view-library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\15838\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\1caf2b127e15bccfd5e114a0f6dbc41e\\res\\drawable-v21\\abc_edit_text_material.xml"
+    }
+]

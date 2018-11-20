@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_remark_et"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:padding="10dp"
+    android:background="@null"
+    android:maxLength="200"
+    android:hint="请输入备注"
+    android:textColor="@color/photo_repair_font_color"
+    android:textSize="13sp">
+
+</EditText>

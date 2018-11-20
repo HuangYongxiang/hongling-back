@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="settingActivity"
+            type="com.hl.contract.business.setting.view.SettingActivity" />
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/survey_navy">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/get_dict_info_tv"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_sync_dict_info"
+                />
+            <TextView
+                android:id="@+id/setting_clear_cache"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_setting_clear_cache"
+                />
+            <TextView
+                android:id="@+id/setting_timeout_reminder"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_setting_timeout_reminder"
+                />
+            <TextView
+                android:id="@+id/setting_photo_quality"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_setting_photo_quality"
+                />
+            <TextView
+                android:id="@+id/setting_change_theme"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_setting_change_theme"
+                android:onClick="@{(view) -> settingActivity.changeTheme() }"
+                />
+            <TextView
+                android:id="@+id/check_update_tv"
+                style="@style/survey_personal_text_style"
+                android:text="@string/survey_check_update"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

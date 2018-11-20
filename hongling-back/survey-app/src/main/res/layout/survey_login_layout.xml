@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="userInfo"
+            type="com.hl.contract.table.model.UserInfo" />
+
+        <variable
+            name="loginActivity"
+            type="com.hl.contract.business.login.view.LoginActivity" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/login_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/survey_yindaos">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/login_image"
+                android:layout_width="109dp"
+                android:layout_height="109dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/survey_login_button_height"
+                android:layout_marginTop="@dimen/survey_login_image_top_height"
+                android:contentDescription="@null"
+                android:padding="10dp" />
+            <!--android:background="@drawable/survey_personal_circle_bg"-->
+            <!--android:src="@mipmap/survey_company_logo" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_image"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText_name"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/core_login_bold_line"
+                    android:drawableLeft="@mipmap/survey_user"
+                    android:gravity="center"
+                    android:hint="请输入帐号"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/core_side_margin_17"
+                    android:paddingRight="@dimen/core_side_margin_17"
+                    android:text="@={userInfo.userName}"
+                    android:textColor="@color/core_dialog_text"
+                    android:textColorHint="@color/core_dialog_text"
+                    android:textCursorDrawable="@drawable/survey_edit_text_cursor_color"
+                    android:textSize="@dimen/core_text_size_15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="27dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@color/survey_login_line"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/editText_pwd"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/core_login_bold_line"
+                    android:drawableLeft="@mipmap/survey_locked"
+                    android:gravity="center"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/core_side_margin_17"
+                    android:paddingRight="@dimen/core_side_margin_17"
+                    android:text="@={userInfo.passWord}"
+                    android:textColor="@color/core_dialog_text"
+                    android:textColorHint="@color/core_dialog_text"
+                    android:textCursorDrawable="@drawable/survey_edit_text_cursor_color"
+                    android:textSize="@dimen/core_text_size_15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="27dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@color/survey_login_line"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="260dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@{userInfo.userName.length() &gt; 0 &amp;&amp; userInfo.passWord.length() &gt; 0 ? @drawable/survey_dolaig_sure_bload_line : @drawable/survey_login_btn_default_bg }"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:onClick="@{(view) -> loginActivity.gotoLogin() }"
+                    android:text="@string/survey_login"
+                    android:textColor="@{userInfo.userName.length() &gt; 0 &amp;&amp; userInfo.passWord.length() &gt; 0 ? @color/survey_white : @color/survey_gray_btn_bg_color }" />
+
+                <CheckBox
+                    android:id="@+id/save_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="20dp"
+                    android:button="@drawable/survey_check_box_selector"
+                    android:checked="false"
+                    android:paddingLeft="7dp"
+                    android:text="@string/survey_login_save_pwd"
+                    android:textColor="@color/core_white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/current_version_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="版权所有：北京宏瓴科技发展有限公司"
+                android:textColor="@color/core_white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

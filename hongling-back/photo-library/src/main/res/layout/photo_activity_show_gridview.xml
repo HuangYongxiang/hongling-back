@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 显示定损单相关联的照片 -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="itemClick"
+            type="com.hl.photo.ui.view.ShowPictureAndTextActivity"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/core_white">
+
+        <View
+            android:id="@+id/view"
+            style="@style/photo_cut_off_line1" />
+
+        <com.hl.photo.ui.widget.GridViewWithHeaderAndFooter
+            android:id="@+id/gridview_photo_subtype_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_submit"
+            android:layout_below="@+id/view"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:scrollingCache="true"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp" />
+
+        <LinearLayout
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/photo_dolaig_sure_bload_line"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/photo_icon_submit_photo" />
+
+                <TextView
+
+                    android:id="@+id/sure_save_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/photo_submit"
+                    android:textColor="@color/core_white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/photo_upload_progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/photo_margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/photo_button_gray_selector"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/photo_margin_5" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/photo_upload_progress_bar_container"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/photo_upload_photo_progress_bg"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/photo_upload_progress_bar"
+                    android:layout_width="8dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/photo_upload_photo_progress_bar"></View>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/photo_upload_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:text="照片上传中,上传进度："
+                android:textColor="@color/core_white"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

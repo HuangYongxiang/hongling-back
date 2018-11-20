@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--左右边距-->
+    <dimen name="core_side_margin_17">17dp</dimen>
+    <!--左右边距-->
+    <dimen name="core_side_margin_12">12dp</dimen>
+    <!--距上部的距离(core_bg_color 的高度)-->
+    <dimen name="core_margin_top_9">9dp</dimen>
+    <!--主页面模块默认的高度(选择前高度)-->
+    <dimen name="core_main_item__height_default_80">69dp</dimen>
+    <!--主页面模块展开的高度(选择后高度)-->
+    <dimen name="core_main_item__height_added_47">47dp</dimen>
+    <!--信息页面item的高度-->
+    <dimen name="core_info_item__height_50">50dp</dimen>
+    <!--边框 分隔线的高度-->
+    <dimen name="core_frame_line_height_0.4">0.4dp</dimen>
+    <!--加粗线的高度-->
+    <dimen name="core_blod_line_height_1">1dp</dimen>
+    <!--边框圆角的弧度-->
+    <dimen name="core_corner_radius_4">4dp</dimen>
+    <dimen name="core_corner_radius_2">2dp</dimen>
+
+    <!--文字大小-->
+    <dimen name="core_text_size_12">12sp</dimen>
+    <!--文字大小-->
+    <dimen name="core_text_size_15">15sp</dimen>
+    <!--title 文字大小-->
+    <dimen name="core_text_size_16">16sp</dimen>
+    <!--title 文字大小-->
+    <dimen name="core_text_size_18">18sp</dimen>
+    <!--title 文字大小-->
+    <dimen name="core_text_size_38">38sp</dimen>
+</resources>

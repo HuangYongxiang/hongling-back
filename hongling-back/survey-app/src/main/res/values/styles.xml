@@ -1,0 +1,506 @@
+<resources>
+
+    <!-- 底部菜单栏的图标的sytle-->
+    <style name="survey_menu_icon">
+        <item name="android:layout_height">27dp</item>
+        <item name="android:layout_width">27dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <!-- task列表中title文字的sytle-->
+    <style name="survey_task_list_title_style">
+        <item name="android:textColor">@color/core_white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- task列表中内容文字的sytle-->
+    <style name="survey_task_list_content_style">
+        <item name="android:textColor">@color/core_white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- task item最左侧的小红线-->
+    <style name="survey_task_item_red_line_style">
+        <item name="android:background">@color/survey_task_item_red_line_color</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- task item中车牌号的style-->
+    <style name="survey_task_item_license_style">
+        <item name="android:textColor">@color/survey_detail_list_name</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">9dp</item>
+    </style>
+
+    <!-- task item中姓名的style-->
+    <style name="survey_task_item_name_style">
+        <item name="android:textColor">@color/survey_detail_list_name</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">43dp</item>
+    </style>
+
+    <!-- task item中地址的style-->
+    <style name="survey_task_item_address_style">
+        <item name="android:textColor">@color/survey_detail_list_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginLeft">21dp</item>
+    </style>
+
+    <!-- task item中task no的style-->
+    <style name="survey_task_item_no_style">
+        <item name="android:textColor">@color/survey_detail_list_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginLeft">21dp</item>
+    </style>
+
+    <!-- task item中查勘，标的，物损文字的style-->
+    <style name="survey_task_item_status_style">
+        <item name="android:textColor">@color/survey_detail_list_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- task item中查勘，标的，物损中间分割线的style-->
+    <style name="survey_task_item_line_style">
+        <item name="android:background">@color/survey_color_ececec_gray</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">0.4dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">13dp</item>
+        <item name="android:layout_marginRight">13dp</item>
+    </style>
+
+ 
+
+
+ <!-- 报案信息页面3个title的sytle-->
+    <style name="survey_detail_title">
+        <item name="android:textColor">@color/survey_detail_list_content</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 报案信息页面3个title底下的红线的sytle-->
+    <style name="survey_detail_red_line">
+        <item name="android:background">@color/core_theme_color</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <!-- 查勘信息子页面内容的sytle-->
+    <style name="survey_eval_survey_text_value">
+        <item name="android:textColor">@color/survey_detail_list_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:hint">@string/survey_write_note</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="survey_basic_info_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingRight">17dp</item>
+        <item name="android:textColor">@color/survey_detail_list_title</item>
+    </style>
+    <!-- 报案信息子页面分隔线的sytle-->
+    <style name="survey_value_with_line">
+        <item name="android:background">@color/survey_detail_list_line</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 报案信息子页面分隔条的sytle-->
+    <style name="survey_value_with_bar">
+        <item name="android:background">@color/survey_navy</item>
+        <item name="android:layout_height">9dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 报案信息子页面内容后面带有图标的内容的sytle-->
+    <style name="survey_value_with_icon">
+        <item name="android:textColor">@color/survey_detail_list_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="survey_policy_main_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/survey_gray_btn_bg_color</item>
+    </style>
+
+    <style name="survey_eval_basic_item_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingRight">17dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="survey_eval_basic_left_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="survey_eval_basic_right_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:hint">@string/survey_write_note</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="survey_eval_basic_null_right_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:hint">@string/survey_write_noting</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="survey_eval_basic_item_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/survey_manhour_list_item_line</item>
+    </style>
+
+    <style name="survey_eval_basic_required_left" parent="survey_eval_basic_left_style">
+        <item name="android:textColor">@color/survey_menu_text_color</item>
+    </style>
+
+    <style name="survey_eval_basic_required_right" parent="survey_eval_basic_right_style">
+        <item name="android:textColor">@color/survey_repair_font_color</item>
+    </style>
+    <style name="survey_eval_basic_required_right_noting" parent="survey_eval_basic_null_right_style">
+        <item name="android:textColor">@color/survey_repair_font_color</item>
+    </style>
+
+    <style name="survey_eval_basic_un_required_left" parent="survey_eval_basic_left_style">
+        <item name="android:textColor">@color/survey_detail_list_title</item>
+    </style>
+
+    <style name="survey_eval_basic_un_required_right" parent="survey_eval_basic_right_style">
+        <item name="android:textColor">@color/survey_detail_list_title</item>
+    </style>
+
+
+    <style name="survey_eval_basic_radiobtn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:button">@drawable/survey_eval_radio_btn_selector</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/survey_detail_list_title</item>
+    </style>
+    <!--查勘页面项目根布局样式-->
+    <style name="survey_main_fragment_content_linearlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">9dp</item>
+    </style>
+
+    <style name="survey_eval_main_add_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:drawableLeft">@mipmap/survey_icon_jia2</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="survey_main_add_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:drawableLeft">@mipmap/survey_icon_jia2</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="survey_eval_main_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/core_text_color_999999</item>
+    </style>
+
+    <style name="survey_main_item_title_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/core_text_color_999999</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="survey_main_item_text" parent="survey_main_item_title_text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="survey_eval_main_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/survey_gray_btn_bg_color</item>
+    </style>
+
+    <style name="survey_eval_main_finish_base_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="survey_eval_main_finish_left_txt" parent="survey_eval_main_finish_base_txt">
+        <item name="android:textColor">@color/core_text_color_333333</item>
+    </style>
+
+    <style name="survey_eval_main_finish_right_txt" parent="survey_eval_main_finish_base_txt">
+        <item name="android:textColor">@color/core_text_color_999999</item>
+    </style>
+
+    <style name="survey_bottom_navi_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:textColor">@color/survey_repair_font_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/survey_bottom_navi_text_press_selector</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="survey_bottom_navi_more_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textColor">@color/survey_repair_font_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/survey_bottom_navi_text_press_selector</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+    <style name="survey_bottom_navi_line_vertical_style">
+        <item name="android:layout_width">0.4dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/survey_bottom_navi_line</item>
+    </style>
+
+    <style name="survey_personal_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/survey_personal_white_btn_circle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/survey_333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--风险-->
+    <style name="survey_risk_linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:background">@color/core_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="survey_risk_line_vertical">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginLeft">11dp</item>
+        <item name="android:background">@color/survey_manhour_edittext</item>
+    </style>
+
+    <style name="survey_risk_text_tip">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:textColor">@color/survey_repair_font_color</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="survey_risk_image_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">11dp</item>
+        <item name="android:src">@mipmap/survey_icon_down</item>
+    </style>
+
+    <style name="survey_risk_detail_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/survey_detail_title_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+    <style name="survey_his_payment_item_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="survey_item_linear_layout_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="survey_module_not_finished_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="survey_customer_material_edit_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textCursorDrawable">@drawable/survey_edit_text_cursor_color</item>
+        <item name="android:background">@drawable/survey_edit_text_bold_selector</item>
+    </style>
+
+
+    <!-- 查勘信息子页面title的sytle-->
+    <style name="survey_eval_survey_text_name">
+        <item name="android:textColor">@color/survey_detail_list_name</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 报案信息子页面内容的sytle-->
+    <style name="survey_report_text_value">
+        <item name="android:textColor">@color/survey_detail_list_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="survey_module_finished_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="survey_query_rb_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/survey_menu_text_color</item>
+        <item name="android:button">@drawable/survey_eval_radio_btn_selector</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="survey_query_line_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/survey_gray_btn_bg_color</item>
+    </style>
+
+    <style name="survey_query_report_time">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:hint">请选择</item>
+        <item name="android:textColorHint">@color/survey_detail_title_color</item>
+        <item name="android:textColor">@color/survey_menu_text_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+    <style name="survey_more_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/survey_detail_list_name</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+</resources>

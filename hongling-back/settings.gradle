@@ -1,0 +1,1 @@
+include ':survey-app',':core-lib', ':ifly-library',':picker-view-library',':ocr_library',':photo-library'
